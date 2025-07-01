@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styleuser.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Login & Signup</title>
+</head>
+<body>
+   <div class="xa">
+  <a href="index.html"><i class="fas fa-x"></i></a>
+  </div>
+
+  
+  <div class="container" id="container">
+    <!-- Sign Up Form -->
+    <div class="form-container sign-up-container">
+      <form id="signup-form">
+        <h1>Create Account</h1>
+        <input type="email" name="email" placeholder="Email" required autocomplete="username"/>
+        <input type="password" name="password" placeholder="Password" required autocomplete="new-password"/>
+        <input type="password" name="password2" placeholder="Confirm Password" required/>
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+    <!-- Login Form -->
+    <div class="form-container sign-in-container">
+      <form id="login-form">
+        <h1>Sign In</h1>
+        <input type="email" name="email" placeholder="Email" required autocomplete="username"/>
+        <input type="password" name="password" placeholder="Password" required autocomplete="current-password"/>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+    <!-- Overlay panels to switch forms -->
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h1>Welcome Back!</h1>
+          <button class="ghost" id="signIn">Sign In</button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <h1>Hello, Friend!</h1>
+          <button class="ghost" id="signUp">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="java.js"></script>
+</body>
+</html>
